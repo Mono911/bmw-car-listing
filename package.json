@@ -1,12 +1,15 @@
 {
-  "name": "my-v0-project",
+  "name": "bmw-car-listing",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Mono911.github.io/bmw-car-listing",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
